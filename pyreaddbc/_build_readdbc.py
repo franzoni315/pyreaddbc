@@ -38,5 +38,5 @@ if __name__ == "__main__":
         tmpdir=".",
         target=f"{pyreaddbc_PATH}/_readdbc.so",
         verbose=True,
-        debug=True,
+        debug=False,
     )
