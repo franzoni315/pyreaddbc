@@ -17,7 +17,7 @@ with open(os.path.join(pyreaddbc_PATH, "c-src/dbc2dbf.c"), "r") as f:
     ffibuilder.set_source(
         "pyreaddbc._readdbc",
         f.read(),
-        libraries=["c"],
+        libraries=["kernel32"],
         sources=[os.path.join(pyreaddbc_PATH, "c-src/blast.c")],
         include_dirs=[os.path.join(pyreaddbc_PATH, "c-src/")],
     )
