@@ -36,7 +36,7 @@ print(f"{pyreaddbc_PATH}/_readdbc.pyd")
 if __name__ == "__main__":
     ffibuilder.compile(
         tmpdir=".",
-        target="_readdbc.pyd",
+        target=f"{pyreaddbc_PATH}/_readdbc.pyd",
         verbose=True,
         debug=False,
     )
