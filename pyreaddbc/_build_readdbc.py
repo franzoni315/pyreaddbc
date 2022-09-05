@@ -32,11 +32,11 @@ ffibuilder.cdef(
 with open(os.path.join(pyreaddbc_PATH, "c-src/blast.h")) as f:
     ffibuilder.cdef(f.read(), override=True)
 
-print(f"{pyreaddbc_PATH}/_readdbc.dll")
+print(f"{pyreaddbc_PATH}/_readdbc.pyd")
 if __name__ == "__main__":
     ffibuilder.compile(
         tmpdir=".",
-        target="_readdbc.*",
+        target="_readdbc.pyd",
         verbose=True,
         debug=False,
     )
